@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Satisfood | あなたのお店を世界とつなぐ。</title>
+  <meta name="description" content="Satisfoodはチャット型のAIメニュー。QRコードを読み取り、旅行者の気分や好みにぴったりの料理を提案します。言葉の壁を越え、海外からのお客様の胃袋をつかむSatisfoodは、「あなたのお店を世界とつなぐ」ウェブサービスです。">
+  <meta name="keywords" content="Satisfood、サティスフード、チャット、AIメニュー、QRコード、レコメンド、外国人旅行者、ハラール、ベジタリアン"/>
+  <!-- <meta name="viewport" content="width=980"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!-- 電話番号の自動リンクを無効化するmeta -->
+  <meta name="format-detection" content="telephone=no">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:locale" content="ja_JP"/>
+  <meta property="fb:admins" content=""/>
+  <meta property="og:title" content="Satisfood | あなたのお店を世界とつなぐ。"/>
+  <meta property="og:description" content="Satisfoodはチャット型のAIメニュー。QRコードを読み取り、旅行者の気分や好みにぴったりの料理を提案します。言葉の壁を越え、海外からのお客様の胃袋をつかむSatisfoodは、「あなたのお店を世界とつなぐ」ウェブサービスです。"/>
+  <meta property="og:url" content=""/>
+  <meta property="og:site_name" content="Satisfood | あなたのお店を世界とつなぐ。"/>
+  <meta property="og:type" content="blog"/>
+  <meta property="og:image" content="img/ogp.jpg"/>
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bundle.js"></script>
+</head>
+
+<body class="home">
+
+  <div class="p-loading js-loading">
+    <div class="p-loading__image">
+      <svg class="p-loading__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 362 242"><path d="M0,0V242H362V0ZM361,126.37c0,31.39-19.16,60.66-53.95,82.43C273.3,229.93,228.52,241.57,181,241.57S88.7,229.93,54.92,208.8C20.13,187,1,157.76,1,126.37V115.63C1,84.24,20.13,55,54.92,33.2,88.7,12.07,133.48.43,181,.43S273.3,12.07,307.08,33.2C341.87,55,361,84.24,361,115.63Z"/><path d="M181,14.23c-91.66,0-166.23,45.49-166.23,101.4S89.34,217,181,217s166.23-45.49,166.23-101.41S272.66,14.23,181,14.23Zm76,152.2-.55.4a102.17,102.17,0,0,1-10.16,4.66c-15.48,5.7-34.4,9.61-54.95,10.81q-2.67.15-5.31.24c-1.76,0-3.53.07-5.31.07s-3.37,0-5-.07l-1.32,0c-1.51,0-3-.1-4.5-.17l-.51,0c-1.58-.08-3.15-.19-4.71-.3l-1.5-.12c-1.24-.1-2.47-.2-3.69-.32l-1.14-.11c-1.43-.15-2.85-.32-4.26-.49l-1.82-.24-2.8-.4-2.09-.31-3.4-.58-2.16-.4-2-.4c-1.21-.25-2.4-.5-3.59-.77l-1.87-.43-2.37-.58-1.43-.37c-1.79-.48-3.56-1-5.27-1.49h0A112.23,112.23,0,0,1,105,166.83a4.55,4.55,0,0,1,.16-8.1l.31-.14.39-.14a4.64,4.64,0,0,1,.51-.11l.23,0a4.43,4.43,0,0,1,.73,0h.17a5.43,5.43,0,0,1,.85.15c1.67.44,3.38.86,5.11,1.27l1.3.3c1.67.39,3.35.76,5.06,1.12l.26.05q2.77.57,5.66,1.09l1,.18c1.87.34,3.76.66,5.69,1h.1q3.11.48,6.3.9l.51.07q6.47.84,13.23,1.42h0q3.47.3,7,.52c6.87.43,13.93.67,21.14.67,1.63,0,3.25,0,4.86,0h0c2.73,0,5.43-.11,8.12-.21l1.32-.06c2.62-.11,5.23-.24,7.81-.41a84.24,84.24,0,0,0,8.66-1.45A270.26,270.26,0,0,0,262.16,154a4.38,4.38,0,0,1,3.94.49A25.56,25.56,0,0,1,257,166.43Zm42.47-23.5a2.6,2.6,0,0,1-4.34-2.75,39.82,39.82,0,0,0,3.71-16.62C298.81,86.82,246.06,57,181,57S63.19,86.82,63.19,123.56a39.82,39.82,0,0,0,3.71,16.62,2.6,2.6,0,0,1-4.34,2.75c-8-9.55-12.46-20.22-12.46-31.49,0-40.83,58.61-73.93,130.9-73.93s130.9,33.1,130.9,73.93C311.9,122.71,307.43,133.38,299.44,142.93Z"/></svg>
+
+      <div class="p-loading__fill js-loading-fill"></div>
+      <div class="p-loading__parts js-loading-parts">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.61 42.78">
+          <path d="M4.47,42.78c27,0,51.93-3.18,72.38-8.57a4.69,4.69,0,0,1,2.26,0C86.81,20.83,81.37,2.49,67,.31c-14.85-2.25-23,8-26.12,23.33C38.35,36,36.25,39.76,17.64,42Q9,42.63,0,42.74C1.48,42.76,3,42.78,4.47,42.78Z"/>
+        </svg>
+      </div>
+    </div><!-- .p-loading__image -->
+    <div class="p-loading__title">
+      <img src="../img/img_hero_mv.png" alt="">
+    </div><!-- .p-loading__title -->
+  </div><!-- .p-loading -->
+  <div class="p-intro js-intro">
+    <div class="p-intro-movie js-bg-movie c-movie">
+      <div id="player" class="p-intro-movie__item"></div>
+    </div><!-- .p-intro-movie -->
+    <div class="p-intro-movie-overlay"></div><!-- .p-intro-movie-overlay -->
+    <div class="p-intro__footer">
+      <a href="#" class="p-intro-skip js-intro-skip">SKIP ></a>
+    </div><!-- .p-intro__footer -->
+  </div><!-- .p-intro -->
+
+  <div id="pagetop" class="l-layout">
+    <div class="l-layout__container">
+
+      <div class="l-layout__content">
+
+        <div class="l-header">
+          <header class="l-header__container">
+            <div class="l-header-title">
+              <h1><a href="/"><span class="c-logo c-logo--site-name">Satisfood</span></a></h1>
+            </div><!-- /l-header-title -->
+            <ul class="l-header-navigation">
+              <li class="l-header-navigation__item"><a href="#about" class="l-header-navigation__link js-anchor">Satisfoodとは？<span></span></a></li>
+              <li class="l-header-navigation__item"><a href="#message" class="l-header-navigation__link js-anchor">開発者からのメッセージ<span></span></a></li>
+              <li class="l-header-navigation__item"><a href="#feature" class="l-header-navigation__link js-anchor">特長とメリット<span></span></a></li>
+              <li class="l-header-navigation__item"><a href="#howto" class="l-header-navigation__link js-anchor">使い方<span></span></a></li>
+              <li class="l-header-navigation__item"><a href="#flow" class="l-header-navigation__link js-anchor">導入フロー<span></span></a></li>
+              <li class="l-header-navigation__item"><a href="#potential" class="l-header-navigation__link js-anchor">ポテンシャル<span></span></a></li>
+              <li class="l-header-navigation__item"><a href="#performance" class="l-header-navigation__link js-anchor">導入実績<span></span></a></li>
+              <li class="l-header-navigation__item"><a href="#faq" class="l-header-navigation__link js-anchor">よくあるご質問<span></span></a></li>
+            </ul><!-- .l-header-navigation -->
+          </header>
+        </div><!-- /header -->
+
+        <input type="checkbox" class="l-navigation-drawer-menu-check" id="menu-btn">
+        <label class="l-navigation-drawer-menu-btn is-hidden" for="menu-btn">
+          <span class="l-navigation-drawer-menu-btn-bar"></span>
+          <span class="l-navigation-drawer-menu-btn-bar"></span>
+          <span class="l-navigation-drawer-menu-btn-bar"></span>
+        </label>
+        <label class="l-navigation-drawer-menu-overlay" for="menu-btn"></label>
+
+        <div class="l-navigation-drawer-menu">
+          <div class="l-navigation-grid">
+            <div class="l-navigation-grid__item">
+              <nav class="l-navigation-content l-navigation-content-main">
+                <ul class="l-navigation-row">
+                  <li class="l-navigation__item"><a href="#top" class="l-navigation__link js-anchor">TOP</a></li>
+                  <li class="l-navigation__item"><a href="#about" class="l-navigation__link js-anchor">Satisfoodとは？</a></li>
+                  <li class="l-navigation__item"><a href="#message" class="l-navigation__link js-anchor">開発者からのメッセージ</a></li>
+                  <li class="l-navigation__item"><a href="#feature" class="l-navigation__link js-anchor">特長とメリット</a></li>
+                  <li class="l-navigation__item"><a href="#howto" class="l-navigation__link js-anchor">使い方</a></li>
+                  <li class="l-navigation__item"><a href="#flow" class="l-navigation__link js-anchor">導入フロー</a></li>
+                  <li class="l-navigation__item"><a href="#potential" class="l-navigation__link js-anchor">ポテンシャル</a></li>
+                  <li class="l-navigation__item"><a href="#performance" class="l-navigation__link js-anchor">導入実績</a></li>
+                  <li class="l-navigation__item"><a href="#faq" class="l-navigation__link js-anchor">よくあるご質問</a></li>
+                </ul>
+              </nav>
+            </div><!-- .l-navigation-grid__item -->
+
+          </div><!-- .l-navigation-grid -->
+        </div><!-- .l-navigation__container -->
+
+        <div class="l-content">
+          <article class="p-article">
+            <section id="top" class="p-hero js-nav-show">
+              <div class="p-hero__container">
+                <div class="p-hero__header">
+                  <h2 class="p-hero__header-text">あなたのお店を<br>世界とつなぐ。</h2>
+                </div><!-- .p-hero__header -->
+                <div class="p-hero__image">
+                  <img src="img/img_hero_mv.png" alt="table concierge Satisfood">
+                </div><!-- .p-hero__image -->
+                <div class="p-hero__body">
+                  <p>「Satisfood」は、チャット型のAIメニュー。<br>外国人旅行者の食べたいや知りたいニーズに応え、<br>繁盛するお店に導くWEBサービスです。</p>
+                </div><!-- .p-hero__body -->
+              </div><!-- .p-hero__container -->
+
+              <div class="p-hero__footer">
+                <div class="p-news">
+                  <div class="p-news__container js-news-acc__container">
+                    <div class="p-news__header">
+                      <h3 class="p-news__header-text">NEWS</h3>
+                    </div><!-- .p-news__header -->
+                    <div class="p-news__body">
+                      <ul class="p-news-list js-news-acc__target">
+                        <li class="p-news-list__item"><a href="#">
+                          <span class="p-news-list__item-text p-news-list__item-text-date">2019.3.15</span>
+                          <span class="p-news-list__item-text p-news-list__item-text-detail">サイトを公開しました。サイトを公開しました。</span>
+                        </a></li><!-- .p-news-list__item -->
+                        <li class="p-news-list__item"><a href="#">
+                          <span class="p-news-list__item-text p-news-list__item-text-date">2019.3.15</span>
+                          <span class="p-news-list__item-text p-news-list__item-text-detail">サイトを公開しました。2サイトを公開しました。2サイトを公開しました。2サイトを公開しました。2サイトを公開しました。2</span>
+                        </a></li><!-- .p-news-list__item -->
+                        <li class="p-news-list__item"><a href="#">
+                          <span class="p-news-list__item-text p-news-list__item-text-date">2019.3.15</span>
+                          <span class="p-news-list__item-text p-news-list__item-text-detail">サイトを公開しました。3</span>
+                        </a></li><!-- .p-news-list__item -->
+                        <li class="p-news-list__item"><a href="#">
+                          <span class="p-news-list__item-text p-news-list__item-text-date">2019.3.15</span>
+                          <span class="p-news-list__item-text p-news-list__item-text-detail">サイトを公開しました。4</span>
+                        </a></li><!-- .p-news-list__item -->
+                        <li class="p-news-list__item"><a href="#">
+                          <span class="p-news-list__item-text p-news-list__item-text-date">2019.3.15</span>
+                          <span class="p-news-list__item-text p-news-list__item-text-detail">サイトを公開しました。5</span>
+                        </a></li><!-- .p-news-list__item -->
+                      </ul>
+                    </div><!-- .p-news__body -->
+                    <div class="p-news__footer">
+                      <a href="#" class="p-news__btn js-news-acc__trigger"></a>
+                    </div><!-- .p-news__footer -->
+                  </div><!-- .p-news__container -->
+                </div><!-- .p-news -->
+              </div><!-- .p-hero__footer -->
+
+              <div class="p-hero__aside">
+                <a href="#summary" class="p-hero__btn"><span class="p-hero__btn-arrow"></span><span class="p-hero__btn-text">SCROLL</span></a>
+              </div><!-- .p-hero__aside -->
+            </section><!-- .p-hero -->
+
+            <section id="summary" class="p-summary">
+              <div class="p-summary__container">
+                <ul class="p-summary-slider js-slick">
+                  <li class="p-summary-slider__item">
+                    <div class="p-summary-content p-summary-content--1">
+                      <div class="p-summary-content-media">
+                        <div class="p-summary-content-media__body">
+                          <div class="p-summary-content__header">
+                            <span class="p-summary-content__header-caption">外国人旅行者が<br>日本で楽しみたいこと</span>
+                            <h3 class="p-summary-content__header-text"><i class="c-icon c-icon--rankstar c-icon--rankstar-red">第<strong>1</strong>位</i>「食事」</h3>
+                          </div><!-- .p-summary-content__header -->
+                          <div class="p-summary-content__body">
+                            <p class="p-summary-content__body-note">観光庁「訪日外国人消費動向調査」<br class="u-device--tablet-down">（2018年1〜3月期） より</p>
+                          </div><!-- .p-summary-content__body -->
+                        </div><!-- .p-summary-content-media__body -->
+                        <div class="p-summary-content-media__image">
+                          <img src="img/img_summary_content01.png" alt="">
+                        </div><!-- .p-summary-content-media__image -->
+                      </div><!-- .p-summary-content-media -->
+
+                    </div><!-- .p-summary-content -->
+                  </li>
+
+                  <li class="p-summary-slider__item">
+                    <div class="p-summary-content p-summary-content--2">
+                      <div class="p-summary-content-media">
+                        <div class="p-summary-content-media__body">
+                          <div class="p-summary-content__header">
+                            <span class="p-summary-content__header-caption">外国人旅行者が<br>日本語が理解できなくて<br>困った場所</span>
+                            <h3 class="p-summary-content__header-text"><i class="c-icon c-icon--rankstar c-icon--rankstar-purple">第<strong>1</strong>位</i>「飲食店」</h3>
+                          </div><!-- .p-summary-content__header -->
+                          <div class="p-summary-content__body">
+                            <p class="p-summary-content__body-note">観光庁「訪日外国人旅行者の<br class="u-device--tablet-down">受入環境整備における<br>国内の多言語対応に関するアンケート <br class="u-device--tablet-down">(2017年実施）」結果より</p>
+                          </div><!-- .p-summary-content__body -->
+                        </div><!-- .p-summary-content-media__body -->
+                        <div class="p-summary-content-media__image">
+                          <img src="img/img_summary_content02.png" alt="">
+                        </div><!-- .p-summary-content-media__image -->
+                      </div><!-- .p-summary-content-media -->
+
+                    </div><!-- .p-summary-content -->
+                  </li>
+
+                  <li class="p-summary-slider__item">
+                    <div class="p-summary-content p-summary-content--3">
+                      <div class="p-summary-content-media">
+                        <div class="p-summary-content-media__body">
+                          <div class="p-summary-content__header">
+                            <span class="p-summary-content__header-caption">外国人旅行者の<br>悩みや不満を<br class="u-device--tablet-down">解消して、<br>千客万来の繁盛店へ！</span>
+                          </div><!-- .p-summary-content__header -->
+                          <div class="p-summary-content__body">
+                            <p class="p-summary-content__body-text">「2020年 4,000万人を目標」<sup>※</sup>は<br class="u-device--tablet-down">絶好のチャンス！<br>今こそ、外国人旅行者の<br class="u-device--tablet-down">受け入れ態勢を整える時。</p>
+                            <p class="p-summary-content__body-note">※政府「明日の日本を支える観光ビジョン」より</p>
+                          </div><!-- .p-summary-content__body -->
+                        </div><!-- .p-summary-content-media__body -->
+                        <div class="p-summary-content-media__image">
+                          <img src="img/img_summary_content03.png" alt="">
+                        </div><!-- .p-summary-content-media__image -->
+                      </div><!-- .p-summary-content-media -->
+
+                    </div><!-- .p-summary-content -->
+                  </li>
+
+                  <li class="p-summary-slider__item">
+                    <div class="p-summary-content p-summary-content--4">
+                      <div class="p-summary-content-media">
+                        <div class="p-summary-content-media__body">
+                          <div class="p-summary-content__header">
+                            <span class="p-summary-content__header-caption">言葉の壁を越える</span>
+                            <h3 class="p-summary-content__header-text"><small>チャット型AIフードメニュー</small><span class="c-logo c-logo--sf">Satisfood</span></h3>
+                            <span class="p-summary-content__header-caption">が実現します。</span>
+                          </div><!-- .p-summary-content__header -->
+                        </div><!-- .p-summary-content-media__body -->
+                        <div class="p-summary-content-media__image">
+                          <img src="img/img_summary_content04.png" alt="">
+                        </div><!-- .p-summary-content-media__image -->
+                      </div><!-- .p-summary-content-media -->
+
+                    </div><!-- .p-summary-content -->
+                  </li>
+
+                </ul><!-- .p-summary-slider -->
+              </div><!-- .p-summary__container -->
+            </section><!-- .p-summary -->
+
+            <section id="about" class="p-section p-about js-scroll-fade">
+              <div class="p-section__container">
+                <div class="p-section__header">
+                  <h2 class="p-section__header-text">Satisfoodとは？</h2><!-- .p-section__header-text -->
+                </div><!-- .p-section__header -->
+                <div class="p-section__body">
+                  <div class="p-about-content">
+                    <div class="p-about-content-media">
+                      <div class="p-about-content-media__body">
+                        <p>外国人旅行者に<br>もっとミラクルな<br>「食」体験を！</p>
+                      </div><!-- .p-about-content-media__body -->
+                      <div class="p-about-content-media__movie">
+                        <a href="https://www.youtube.com/watch?v=NKWcm2AxzYI" class="js-mfp-yt c-btn c-btn--play-movie"><img src="img/img_about_movie_thumb.jpg" alt=""></a>
+                      </div><!-- .p-about-content-media__movie -->
+                    </div><!-- .p-about-content-media -->
+                  </div><!-- .p-about-content -->
+                </div><!-- .p-section__body -->
+              </div><!-- .p-section__container -->
+            </section><!-- .p-section -->
+
+            <section class="p-contact">
+              <div class="p-contact__container">
+                <div class="p-contact__body">
+                  <p>外国人旅行者対応のスタッフ不足を解消し、<br class="u-device--tablet-down">売上げアップに貢献するSatisfoodは<br>テーブルのAIコンシェルジュ</p>
+                </div><!-- .p-contact__body -->
+                <div class="p-contact__footer">
+                  <a href="#" target="_blank" class="c-btn c-btn--contact"><span>お申し込み・お問い合わせ</span></a>
+                </div><!-- .p-contact__footer -->
+              </div><!-- .p-contact__container -->
+            </section><!-- .p-contact -->
+
+            <section id="message" class="p-section p-message js-scroll-fade js-message-bg-animate">
+              <div class="p-section__container">
+                <div class="p-section__header">
+                  <h2 class="p-section__header-text">開発者からのメッセージ</h2><!-- .p-section__header-text -->
+                </div><!-- .p-section__header -->
+                <div class="p-section__body">
+                  <div class="p-message-content">
+                    <div class="p-message-content__movie">
+                      <a href="https://www.youtube.com/watch?v=NKWcm2AxzYI" class="js-mfp-yt c-btn c-btn--play-movie"><img src="img/img_message_movie_thumb.jpg" alt=""></a>
+                      <!-- <button class="button" style="padding:20px;">Open popup</button> -->
+                    </div><!-- .p-message-content-media__movie -->
+                    <div class="p-message-content__body">
+                      <p>旅行者の悩みを解消すれば、お店は繁盛します。<br>このWin×Winのスパイラルを日本中に広めたい！</p>
+                    </div><!-- .p-message-content__body -->
+                    <div class="p-message-content__footer">
+                      <span class="p-message-content__footer-text p-message-content__footer-text--company">株式会社SUPER DUPER</span>
+                      <span class="p-message-content__footer-text p-message-content__footer-text--title">代表取締役</span>
+                      <span class="p-message-content__footer-text p-message-content__footer-text--name">鈴木知行</span>
+                    </div><!-- .p-message-content__footer -->
+                    <div class="p-message__bg"></div><!-- .p-message__bg -->
+                  </div><!-- .p-message-content -->
+                </div><!-- .p-section__body -->
+              </div><!-- .p-section__container -->
+            </section><!-- .p-section -->
+
+            <section id="feature" class="p-section p-feature">
+              <div class="p-section__container">
+                <div class="p-section__header">
+                  <h2 class="p-section__header-text">特長とメリット</h2><!-- .p-section__header-text -->
+                </div><!-- .p-section__header -->
+                <div class="p-section__body">
+                  <div class="p-feature-content">
+                    <div class="p-feature-article p-feature-article--feature js-scroll-slide-in-right">
+                      <div class="p-feature-article__header">
+                        <i class="c-icon c-icon--feature c-icon--feature-feature">特長</i>
+                        <h3 class="p-feature-article__header-text">Satisfoodはチャット型の<br class="u-device--tablet-down">AIメニュー。<br>多言語翻訳だけでなく、<br class="u-device--tablet-down">提案するメニューです。</h3>
+                        <span class="p-feature-article__header-note">（ビジネスモデル特許出願中）</span>
+                      </div><!-- .p-feature-article__header -->
+                      <div class="p-feature-article__body">
+                        <ul class="p-feature-article-grid js-slick-mobile">
+                          <li class="p-feature-article-grid__item">
+                            <div class="p-feature-section">
+                              <div class="p-feature-section__header">
+                                <i class="p-feature-section__header-icon p-feature-section__header-icon--1">1</i>
+                                <h4 class="p-feature-section__header-text">お店自慢のお料理に、<br>相性のいいお酒を合わせて<br>おすすめ。</h4>
+                              </div><!-- .p-feature-section__header -->
+                              <div class="p-feature-section__body">
+                                <p>人気メニューや旬の味、その日の特別な一皿を引き立てるお酒をレコメンド。オーダーを促進し、売上に貢献します。</p>
+                              </div><!-- .p-feature-section__body -->
+                            </div><!-- .p-feature-section -->
+                          </li>
+
+                          <li class="p-feature-article-grid__item">
+                            <div class="p-feature-section">
+                              <div class="p-feature-section__header">
+                                <i class="p-feature-section__header-icon p-feature-section__header-icon--2">2</i>
+                                <h4 class="p-feature-section__header-text">ハラールやアレルギー、<br>ベジタリアン向けの<br>情報にお応え。</h4>
+                              </div><!-- .p-feature-section__header -->
+                              <div class="p-feature-section__body">
+                                <p>食べられない食材や料理がある旅行者にも、安全で安心な食事を楽しんでいただくための情報を提供します。</p>
+                              </div><!-- .p-feature-section__body -->
+                            </div><!-- .p-feature-section -->
+                          </li>
+
+                          <li class="p-feature-article-grid__item">
+                            <div class="p-feature-section">
+                              <div class="p-feature-section__header">
+                                <i class="p-feature-section__header-icon p-feature-section__header-icon--3">3</i>
+                                <h4 class="p-feature-section__header-text">24時間・365日・<br>5ヶ国語対応</h4>
+                              </div><!-- .p-feature-section__header -->
+                              <div class="p-feature-section__body">
+                                <p>Satisfoodが休むことはありません。サービスにムラやムダもありません。人間ではできないことだから、AIが引き受けました。</p>
+                              </div><!-- .p-feature-section__body -->
+                            </div><!-- .p-feature-section -->
+                          </li>
+                        </ul><!-- .p-feature-article-grid -->
+                      </div><!-- .p-feature-article__body -->
+                    </div><!-- .p-feature-article p-feature-article--feature -->
+
+                    <div class="p-feature-article p-feature-article--merit js-scroll-slide-in-left">
+                      <div class="p-feature-article__header">
+                        <i class="c-icon c-icon--feature c-icon--feature-merit"><small>飲食店様の</small>メリット</i>
+                        <h3 class="p-feature-article__header-text">最高のグルメ体験で<br class="u-device--tablet-down">インバウンドの風をつかみ、<br>千客万来の繁盛店へ。</h3>
+                      </div><!-- .p-feature-article__header -->
+                      <div class="p-feature-article__body">
+                        <ul class="p-feature-article-grid js-slick-mobile">
+                          <li class="p-feature-article-grid__item">
+                            <div class="p-feature-section">
+                              <div class="p-feature-section__header is-height-fix">
+                                <i class="p-feature-section__header-icon p-feature-section__header-icon--1">1</i>
+                                <h4 class="p-feature-section__header-text">外国人旅行者の<br>満足度を高め、<br>客単価の向上へ</h4>
+                              </div><!-- .p-feature-section__header -->
+                              <div class="p-feature-section__body">
+                                <p>いくつものメニューや食材、飲み物を紹介し、お客様の要望を汲み取って提案するSatisfood。満足度が上げれば、客単価も上向くに違いありません。</p>
+                              </div><!-- .p-feature-section__body -->
+                            </div><!-- .p-feature-section -->
+                          </li>
+
+                          <li class="p-feature-article-grid__item">
+                            <div class="p-feature-section">
+                              <div class="p-feature-section__header is-height-fix">
+                                <i class="p-feature-section__header-icon p-feature-section__header-icon--2">2</i>
+                                <h4 class="p-feature-section__header-text">SNS の<br class="u-device--tablet-up">シェア率を高め、<br>さらなる<br class="u-device--tablet-up">お客様増へ</h4>
+                              </div><!-- .p-feature-section__header -->
+                              <div class="p-feature-section__body">
+                                <p>満足な「食」体験がFacebookやInstagram、Twitterなどへの投稿を刺激します。SNSのシェア率アップこそが、繁盛店への近道です。</p>
+                              </div><!-- .p-feature-section__body -->
+                            </div><!-- .p-feature-section -->
+                          </li>
+
+                          <li class="p-feature-article-grid__item">
+                            <div class="p-feature-section">
+                              <div class="p-feature-section__header is-height-fix">
+                                <i class="p-feature-section__header-icon p-feature-section__header-icon--3">3</i>
+                                <h4 class="p-feature-section__header-text">外国人接客の<br>業務負荷を抑え、<br>従業員満足度の<br class="u-device--tablet-up">向上へ</h4>
+                              </div><!-- .p-feature-section__header -->
+                              <div class="p-feature-section__body">
+                                <p>言葉の壁や習慣、宗教観など、丁寧な接客を志せばさすほど、スタッフの負担は増えるばかりです。Satisfoodが、その問題を解決します。</p>
+                              </div><!-- .p-feature-section__body -->
+                            </div><!-- .p-feature-section -->
+                          </li>
+
+                          <li class="p-feature-article-grid__item">
+                            <div class="p-feature-section">
+                              <div class="p-feature-section__header is-height-fix">
+                                <i class="p-feature-section__header-icon p-feature-section__header-icon--4">4</i>
+                                <h4 class="p-feature-section__header-text">専門スタッフ<br class="u-device--tablet-up">採用や<br class="u-device--tablet-down">教育など、<br>多言語接客コストの<br class="u-device--tablet-up">抑制へ</h4>
+                              </div><!-- .p-feature-section__header -->
+                              <div class="p-feature-section__body">
+                                <p>中国語やハングル、英語など、多言語をカバーするスタッフの採用は売上を圧迫します。Satisfoodはその人件費を抑えます。</p>
+                              </div><!-- .p-feature-section__body -->
+                            </div><!-- .p-feature-section -->
+                          </li>
+                        </ul><!-- .p-feature-article-grid -->
+                      </div><!-- .p-feature-article__body -->
+                    </div><!-- .p-feature-article p-feature-article--merit -->
+                  </div><!-- .p-feature-content -->
+                </div><!-- .p-section__body -->
+              </div><!-- .p-section__container -->
+            </section><!-- .p-section -->
+
+            <section id="howto" class="p-section p-howto js-scroll-fade">
+              <div class="p-section__container">
+                <div class="p-section__header">
+                  <h2 class="p-section__header-text">機能と使い方</h2><!-- .p-section__header-text -->
+                </div><!-- .p-section__header -->
+                <div class="p-section__body">
+                  <p class="p-section__body-text">QRコードをかざすだけ。<br>後はスマートメニューエンジン<br>「chachatto（チャチャット）」にお任せ！</p><!-- .p-section__body-text -->
+                  <div class="p-howto-content">
+                    <div class="p-howto-article p-howto-article--1 p-howto-article--img-l js-scroll-fade">
+                      <div class="p-howto-article__num p-howto-article__num--1">1</div><!-- .p-howto-article__num -->
+                      <div class="p-howto-article__container">
+                        <div class="p-howto-article__header">
+                          <h3 class="p-howto-article__header-text">テーブル上のQRコードを、<br class="u-device--tablet-up">スマートフォンで読み取ります。</h3>
+                        </div><!-- .p-howto-article__header -->
+                        <div class="p-howto-article__body">
+                          <p>SatisfoodはWebサービスなので<br class="u-device--tablet-up">ダウンロードは必要ありません。</p>
+                        </div><!-- .p-howto-article__body -->
+                      </div><!-- .p-howto-article__container -->
+                      <div class="p-howto-article__image">
+                        <img src="img/img_howto_article01.png" alt="">
+                      </div><!-- .p-howto-article__image -->
+                    </div><!-- .p-howto-article -->
+
+                    <div class="p-howto-article p-howto-article--2 p-howto-article--img-r js-scroll-fade">
+                      <div class="p-howto-article__num p-howto-article__num--2">2</div><!-- .p-howto-article__num -->
+                      <div class="p-howto-article__container">
+                        <div class="p-howto-article__header">
+                          <h3 class="p-howto-article__header-text">多言語に翻訳した<br class="u-device--tablet-up">お店のメニューを表示します。</h3>
+                        </div><!-- .p-howto-article__header -->
+                        <div class="p-howto-article__body">
+                          <p>グルメサイトなどに登録してある<br class="u-device--tablet-up">メニューデータをベースに、<br class="u-device--tablet-up">お店独自のメニューが作成可能です。</p>
+                        </div><!-- .p-howto-article__body -->
+                      </div><!-- .p-howto-article__container -->
+                      <div class="p-howto-article__image">
+                        <img src="img/img_howto_article02.png" alt="">
+                      </div><!-- .p-howto-article__image -->
+                    </div><!-- .p-howto-article -->
+
+                    <div class="p-howto-article p-howto-article--3 p-howto-article--img-l js-scroll-fade">
+                      <div class="p-howto-article__num p-howto-article__num--3">3</div><!-- .p-howto-article__num -->
+                      <div class="p-howto-article__container">
+                        <div class="p-howto-article__header">
+                          <h3 class="p-howto-article__header-text">チャットでの会話から、<br>お客様の要望を満たすお料理を提案します。</h3>
+                        </div><!-- .p-howto-article__header -->
+                        <div class="p-howto-article__body">
+                          <p>お店のメニューを解析した上で、<br class="u-device--tablet-up">お客様の気持ちや好みを聞き出し、<br class="u-device--tablet-up">スマートメニューエンジン「CHACHATTO」が<br class="u-device--tablet-up">最適なメニューを提案します。</p>
+                        </div><!-- .p-howto-article__body -->
+                      </div><!-- .p-howto-article__container -->
+                      <div class="p-howto-article__image">
+                        <img src="img/img_howto_article03.png" alt="">
+                      </div><!-- .p-howto-article__image -->
+                    </div><!-- .p-howto-article -->
+
+                    <div class="p-howto-article p-howto-article--4 p-howto-article--img-r js-scroll-fade">
+                      <div class="p-howto-article__num p-howto-article__num--4">4</div><!-- .p-howto-article__num -->
+                      <div class="p-howto-article__container">
+                        <div class="p-howto-article__header">
+                          <h3 class="p-howto-article__header-text">お料理のこだわりを説明します。</h3>
+                        </div><!-- .p-howto-article__header -->
+                        <div class="p-howto-article__body">
+                          <p>シェフや板前が腕を振るった料理を説明。<br class="u-device--tablet-up">日本での「食」体験を楽しんでもらいます。</p>
+                        </div><!-- .p-howto-article__body -->
+                      </div><!-- .p-howto-article__container -->
+                      <div class="p-howto-article__image">
+                        <img src="img/img_howto_article04.png" alt="">
+                      </div><!-- .p-howto-article__image -->
+                    </div><!-- .p-howto-article -->
+
+                    <div class="p-howto-article p-howto-article--5 p-howto-article--img-l js-scroll-fade">
+                      <div class="p-howto-article__num p-howto-article__num--5">5</div><!-- .p-howto-article__num -->
+                      <div class="p-howto-article__container">
+                        <div class="p-howto-article__header">
+                          <h3 class="p-howto-article__header-text">お料理と相性のいいお飲み物を提案します。</h3>
+                        </div><!-- .p-howto-article__header -->
+                        <div class="p-howto-article__body">
+                          <p>料理の引き立て役である飲み物を、<br class="u-device--tablet-up">料理の相性からマッチング。<br class="u-device--tablet-up">最適な組み合わせで、<br class="u-device--tablet-up">最高の時間を演出します。</p>
+                        </div><!-- .p-howto-article__body -->
+                      </div><!-- .p-howto-article__container -->
+                      <div class="p-howto-article__image">
+                        <img src="img/img_howto_article05.png" alt="">
+                      </div><!-- .p-howto-article__image -->
+                    </div><!-- .p-howto-article -->
+
+                    <div class="p-howto-article p-howto-article--6 p-howto-article--img-r js-scroll-fade">
+                      <div class="p-howto-article__num p-howto-article__num--6">6</div><!-- .p-howto-article__num -->
+                      <div class="p-howto-article__container">
+                        <div class="p-howto-article__header">
+                          <h3 class="p-howto-article__header-text">ハラールやアレルギー、<br>ベジタリアン向けの情報を提供します。</h3>
+                        </div><!-- .p-howto-article__header -->
+                        <div class="p-howto-article__body">
+                          <p>食べられない食材や料理がある旅行者にも、<br class="u-device--tablet-up">安全で安心な食事を<br class="u-device--tablet-up">楽しんでいただくための情報を提供します。</p>
+                        </div><!-- .p-howto-article__body -->
+                      </div><!-- .p-howto-article__container -->
+                      <div class="p-howto-article__image">
+                        <img src="img/img_howto_article06.png" alt="">
+                      </div><!-- .p-howto-article__image -->
+                    </div><!-- .p-howto-article -->
+
+                    <div class="p-howto-article p-howto-article--7 p-howto-article--img-l js-scroll-fade">
+                      <div class="p-howto-article__num p-howto-article__num--7">7</div><!-- .p-howto-article__num -->
+                      <div class="p-howto-article__container">
+                        <div class="p-howto-article__header">
+                          <h3 class="p-howto-article__header-text">お料理の食べ方を紹介します。</h3>
+                        </div><!-- .p-howto-article__header -->
+                        <div class="p-howto-article__body">
+                          <p>食べ方を理解することも「食」の<br class="u-device--tablet-up">醍醐味の一つと考えたSatisfoodでは、<br class="u-device--tablet-up">美味しい食べ方を紹介します。</p>
+                        </div><!-- .p-howto-article__body -->
+                      </div><!-- .p-howto-article__container -->
+                      <div class="p-howto-article__image">
+                        <img src="img/img_howto_article07.png" alt="">
+                      </div><!-- .p-howto-article__image -->
+                    </div><!-- .p-howto-article -->
+
+                    <div class="p-howto-article p-howto-article--8 p-howto-article--img-r js-scroll-fade">
+                      <div class="p-howto-article__num p-howto-article__num--8">8</div><!-- .p-howto-article__num -->
+                      <div class="p-howto-article__container">
+                        <div class="p-howto-article__header">
+                          <h3 class="p-howto-article__header-text">お料理や食材を説明します。</h3>
+                        </div><!-- .p-howto-article__header -->
+                        <div class="p-howto-article__body">
+                          <p>見慣れない料理に戸惑いや心配がないよう、<br class="u-device--tablet-up">使用している食材や産地、<br class="u-device--tablet-up">味などを説明します。</p>
+                        </div><!-- .p-howto-article__body -->
+                      </div><!-- .p-howto-article__container -->
+                      <div class="p-howto-article__image">
+                        <img src="img/img_howto_article08.png" alt="">
+                      </div><!-- .p-howto-article__image -->
+                    </div><!-- .p-howto-article -->
+
+                    <div class="p-howto-article p-howto-article--9 p-howto-article--img-l js-scroll-fade">
+                      <div class="p-howto-article__num p-howto-article__num--9">9</div><!-- .p-howto-article__num -->
+                      <div class="p-howto-article__container">
+                        <div class="p-howto-article__header">
+                          <h3 class="p-howto-article__header-text">日本語でオーダーします。</h3>
+                        </div><!-- .p-howto-article__header -->
+                        <div class="p-howto-article__body">
+                          <p>こだわりや食べ方、飲み物が決まったら、<br class="u-device--tablet-up">お店のスタッフへ日本語に変換してオーダーします。<br class="u-device--tablet-up">ここまで一切、日本語を使わなくて大丈夫です。</p>
+                        </div><!-- .p-howto-article__body -->
+                      </div><!-- .p-howto-article__container -->
+                      <div class="p-howto-article__image">
+                        <img src="img/img_howto_article09.png" alt="">
+                      </div><!-- .p-howto-article__image -->
+                    </div><!-- .p-howto-article -->
+                  </div><!-- .p-howto-content -->
+                </div><!-- .p-section__body -->
+                <div class="p-section__footer js-scroll-fade">
+                  <div class="p-howto-about">
+                    <div class="p-howto-about__header">
+                      <h3 class="p-howto-about__header-text">スマートメニュー エンジン<br>「CHACHATTO（チャチャット）」とは？</h3>
+                    </div><!-- .p-howto-about__header -->
+                    <div class="p-howto-about__body">
+                      <p>Satisfoodは、慣れない土地にいる外国人旅行者に対する、ITを活用した教育サービスです。旅行先の食事の場で湧き上がる数多くの要望を想定し、料理や食材、酒などの大量のデータベースから網羅的にマイニング。旅行者の気持ちを汲んだ料理や飲み物を、最適解として取り出します。独自のアルゴリズムでホスピタリティをパターン化し、スピーディ＆ダイナミックに料理を提案するSatisfoodは、 世界にただ１つのレコメンドエンジン「chachatto」を搭載しています。</p>
+                    </div><!-- .p-howto-about__body -->
+                  </div><!-- .p-howto-about -->
+                </div><!-- .p-section__footer -->
+              </div><!-- .p-section__container -->
+            </section><!-- .p-section -->
+
+            <section id="flow" class="p-section p-flow">
+              <div class="p-section__container">
+                <div class="p-section__header">
+                  <h2 class="p-section__header-text">Satisfood導入フロー</h2><!-- .p-section__header-text -->
+                </div><!-- .p-section__header -->
+                <div class="p-section__body">
+
+                  <div class="p-flow-content">
+                    <div class="p-flow-article p-flow-article--1 p-flow-article--contact">
+                      <div class="p-flow-article__container">
+                        <div class="p-flow-article__num p-flow-article__num--1">STEP01</div><!-- .p-flow-article__num -->
+                        <div class="p-flow-article__header">
+                          <h3 class="p-flow-article__header-text">お問い合わせ</h3>
+                        </div><!-- .p-flow-article__header -->
+                        <div class="p-flow-article__body">
+                          <p class="p-flow-article__body-text">Satisfoodの導入をご検討の方は、<br class="u-device--tablet-down">お気軽にお問い合わせください。<br>お問い合わせは、専用フォームまたはお電話から承ります。</p>
+                          <p class="p-flow-article__body-tel">00-0000-0000</p>
+                          <p class="p-flow-article__body-time">（受付　月〜金曜日　9：00〜18：00／定休日　土・日・祝日）</p>
+                          <a href="#" class="c-btn c-btn--contact-s"><span>お申し込み・お問い合わせ</span></a>
+                        </div><!-- .p-flow-article__body -->
+                        <div class="p-flow-article__footer">
+                          <span class="p-flow-article__arrow"></span>
+                        </div><!-- .p-flow-article__footer -->
+                      </div><!-- .p-flow-article__container -->
+                    </div><!-- .p-flow-article -->
+
+                    <div class="p-flow-article p-flow-article--2">
+                      <div class="p-flow-article__container">
+                        <div class="p-flow-article__num p-flow-article__num--2">STEP02</div><!-- .p-flow-article__num -->
+                        <div class="p-flow-article__header">
+                          <h3 class="p-flow-article__header-text">ヒアリング・<br class="u-device--tablet-down">デモンストレーション</h3>
+                        </div><!-- .p-flow-article__header -->
+                        <div class="p-flow-article__body">
+                          <p class="p-flow-article__body-text">御社にお伺いし、外国人旅行者の利用の現状や対応への課題などを<br class="u-device--tablet-up">ヒアリングさせていただきます。<br>また、Satisfoodの機能や導入事例などをデモンストレーションしながら、<br class="u-device--tablet-up">改善点などを抽出し、<br class="u-device--tablet-down">サービス開始に必要な環境や仕様などを<br class="u-device--tablet-up">導き出します。</p>
+                        </div><!-- .p-flow-article__body -->
+                        <div class="p-flow-article__footer">
+                          <span class="p-flow-article__arrow"></span>
+                        </div><!-- .p-flow-article__footer -->
+                      </div><!-- .p-flow-article__container -->
+                    </div><!-- .p-flow-article -->
+
+                    <div class="p-flow-article p-flow-article--3">
+                      <div class="p-flow-article__container">
+                        <div class="p-flow-article__num p-flow-article__num--3">STEP03</div><!-- .p-flow-article__num -->
+                        <div class="p-flow-article__header">
+                          <h3 class="p-flow-article__header-text">お見積り</h3>
+                        </div><!-- .p-flow-article__header -->
+                        <div class="p-flow-article__body">
+                          <p class="p-flow-article__body-text">Satisfoodのご提案書と<br class="u-device--tablet-down">概算のお見積りをご提示します。</p>
+                        </div><!-- .p-flow-article__body -->
+                        <div class="p-flow-article__footer">
+                          <span class="p-flow-article__arrow"></span>
+                        </div><!-- .p-flow-article__footer -->
+                      </div><!-- .p-flow-article__container -->
+                    </div><!-- .p-flow-article -->
+
+                    <div class="p-flow-article p-flow-article--4">
+                      <div class="p-flow-article__container">
+                        <div class="p-flow-article__num p-flow-article__num--4">STEP04</div><!-- .p-flow-article__num -->
+                        <div class="p-flow-article__header">
+                          <h3 class="p-flow-article__header-text">要件定義</h3>
+                        </div><!-- .p-flow-article__header -->
+                        <div class="p-flow-article__body">
+                          <p class="p-flow-article__body-text">ご要望やご予算、開発スケジュールなどを踏まえ、<br class="u-device--tablet-up">要件定義書を作成します。</p>
+                        </div><!-- .p-flow-article__body -->
+                        <div class="p-flow-article__footer">
+                          <span class="p-flow-article__arrow"></span>
+                        </div><!-- .p-flow-article__footer -->
+                      </div><!-- .p-flow-article__container -->
+                    </div><!-- .p-flow-article -->
+
+                    <div class="p-flow-article p-flow-article--5">
+                      <div class="p-flow-article__container">
+                        <div class="p-flow-article__num p-flow-article__num--5">STEP05</div><!-- .p-flow-article__num -->
+                        <div class="p-flow-article__header">
+                          <h3 class="p-flow-article__header-text">メニューの作成</h3>
+                        </div><!-- .p-flow-article__header -->
+                        <div class="p-flow-article__body">
+                          <p class="p-flow-article__body-text">作成に必要なデータを洗い出し、<br class="u-device--tablet-down">データベースに登録する際の<br>過不足を確認した上で<br class="u-device--tablet-down">独自メニューを作成します。<br>進捗情報は逐一ご連絡します。</p>
+                        </div><!-- .p-flow-article__body -->
+                        <div class="p-flow-article__footer">
+                          <span class="p-flow-article__arrow"></span>
+                        </div><!-- .p-flow-article__footer -->
+                      </div><!-- .p-flow-article__container -->
+                    </div><!-- .p-flow-article -->
+
+                    <div class="p-flow-article p-flow-article--6">
+                      <div class="p-flow-article__container">
+                        <div class="p-flow-article__num p-flow-article__num--6">STEP06</div><!-- .p-flow-article__num -->
+                        <div class="p-flow-article__header">
+                          <h3 class="p-flow-article__header-text">納品とテスト</h3>
+                        </div><!-- .p-flow-article__header -->
+                        <div class="p-flow-article__body">
+                          <p class="p-flow-article__body-text">簡単な操作手順書（マニュアル）などと一緒に納品させていただきます。<br>また、ご要望に沿った機能や品質を満たしているか、<br>テストでご確認いただきます。</p>
+                        </div><!-- .p-flow-article__body -->
+                        <div class="p-flow-article__footer">
+                          <span class="p-flow-article__arrow"></span>
+                        </div><!-- .p-flow-article__footer -->
+                      </div><!-- .p-flow-article__container -->
+                    </div><!-- .p-flow-article -->
+
+                    <div class="p-flow-article p-flow-article--7">
+                      <div class="p-flow-article__container">
+                        <div class="p-flow-article__num p-flow-article__num--7">STEP07</div><!-- .p-flow-article__num -->
+                        <div class="p-flow-article__header">
+                          <h3 class="p-flow-article__header-text">サービス本稼働・保守サポート</h3>
+                        </div><!-- .p-flow-article__header -->
+                        <div class="p-flow-article__body">
+                          <p class="p-flow-article__body-text">Satisfoodの稼働を開始し、メニュー改定や保守サポート（有償）を<br>させていただきます。</p>
+                        </div><!-- .p-flow-article__body -->
+                      </div><!-- .p-flow-article__container -->
+                    </div><!-- .p-flow-article -->
+
+                  </div><!-- .p-flow-content -->
+                </div><!-- .p-section__body -->
+              </div><!-- .p-section__container -->
+            </section><!-- .p-section -->
+
+            <section class="p-contact">
+              <div class="p-contact__container">
+                <div class="p-contact__body">
+                  <p>やがて日本列島を覆い尽くす、AIフードメニュー本命へ！</p>
+                </div><!-- .p-contact__body -->
+                <div class="p-contact__footer">
+                  <a href="#" target="_blank" class="c-btn c-btn--contact"><span>お申し込み・お問い合わせ</span></a>
+                </div><!-- .p-contact__footer -->
+              </div><!-- .p-contact__container -->
+            </section><!-- .p-contact -->
+
+            <section id="potential" class="p-section p-potential">
+              <div class="p-section__container">
+                <div class="p-section__header">
+                  <h2 class="p-section__header-text">ポテンシャル</h2><!-- .p-section__header-text -->
+                </div><!-- .p-section__header -->
+                <div class="p-section__body">
+                  <p class="p-section__body-text">Satisfoodのポテンシャルが<br class="u-device--tablet-down">実証されました！</p><!-- .p-section__body-text -->
+                  <p class="p-section__body-note">＊自社調べ（2018.6）</p><!-- .p-section__body-note -->
+                  <div class="p-potential-content">
+                    <div class="p-potential-content__container">
+                      <div class="p-potential-grid js-slick-mobile">
+                        <div class="p-potential-grid__item">
+                          <div class="p-potential-article p-potential-article--1">
+                            <div class="p-potential-article__header">
+                              <h3 class="p-potential-article__header-text">Potential01</h3>
+                            </div><!-- .p-potential-article__header -->
+                            <div class="p-potential__body">
+                              <div class="p-potential-graph">
+                                <span class="p-potential-graph__caption">外国人旅行者の利用率</span>
+                                <span class="p-potential-graph__figure">
+                                  <span class="p-potential-graph__gauge"><span class="p-potential-graph__value"><span class="js-countNums" data-nums="67">0</span><small>%</small></span></span>
+                                </span>
+                              </div><!-- .p-potential-graph -->
+                            </div><!-- .p-potential__body -->
+                          </div><!-- .p-potential-article -->
+                        </div><!-- .p-potential-grid__item -->
+
+                        <div class="p-potential-grid__item">
+                          <div class="p-potential-article p-potential-article--2">
+                            <div class="p-potential-article__header">
+                              <h3 class="p-potential-article__header-text">Potential02</h3>
+                            </div><!-- .p-potential-article__header -->
+                            <div class="p-potential__body">
+                              <div class="p-potential-graph">
+                                <span class="p-potential-graph__caption">導入したお店に満足した<br>外国人旅行者</span>
+                                <span class="p-potential-graph__figure">
+                                  <span class="p-potential-graph__gauge"><span class="p-potential-graph__value"><span class="js-countNums" data-nums="95">0</span><small>%</small></span></span>
+                                </span>
+                              </div><!-- .p-potential-graph -->
+                            </div><!-- .p-potential__body -->
+                          </div><!-- .p-potential-article -->
+                        </div><!-- .p-potential-grid__item -->
+
+                        <div class="p-potential-grid__item">
+                          <div class="p-potential-article p-potential-article--3">
+                            <div class="p-potential-article__header">
+                              <h3 class="p-potential-article__header-text">Potential03</h3>
+                            </div><!-- .p-potential-article__header -->
+                            <div class="p-potential__body">
+                              <div class="p-potential-graph">
+                                <span class="p-potential-graph__caption">導入したお店に満足した<br>外国人旅行者</span>
+                                <span class="p-potential-graph__figure">
+                                  <span class="p-potential-graph__gauge"><span class="p-potential-graph__value"><span class="about">最大</span><span class="js-countNums-2" data-nums="33.2">0.0</span><small>%</small></span></span>
+                                </span>
+                              </div><!-- .p-potential-graph -->
+                            </div><!-- .p-potential__body -->
+                          </div><!-- .p-potential-article -->
+                        </div><!-- .p-potential-grid__item -->
+
+                        <div class="p-potential-grid__item">
+                          <div class="p-potential-article p-potential-article--4">
+                            <div class="p-potential-article__header">
+                              <h3 class="p-potential-article__header-text">Potential04</h3>
+                            </div><!-- .p-potential-article__header -->
+                            <div class="p-potential__body">
+                              <div class="p-potential-graph">
+                                <span class="p-potential-graph__caption">接客にかかるコストの<br>減少を実感したお店</span>
+                                <span class="p-potential-graph__figure">
+                                  <span class="p-potential-graph__gauge"><span class="p-potential-graph__value"><span class="js-countNums-2" data-nums="97.7">0.0</span><small>%</small></span></span>
+                                </span>
+                              </div><!-- .p-potential-graph -->
+                            </div><!-- .p-potential__body -->
+                          </div><!-- .p-potential-article -->
+                        </div><!-- .p-potential-grid__item -->
+
+                      </div><!-- .p-potential-grid -->
+                    </div><!-- .p-potential-content__container -->
+                  </div><!-- .p-potential-content -->
+                </div><!-- .p-section__body -->
+              </div><!-- .p-section__container -->
+            </section><!-- .p-section -->
+
+            <section id="performance" class="p-section p-performance">
+              <div class="p-section__container">
+                <div class="p-section__header">
+                  <h2 class="p-section__header-text">導入実績</h2><!-- .p-section__header-text -->
+                </div><!-- .p-section__header -->
+                <div class="p-section__body">
+                  <p class="p-section__body-text">導入実績店舗数<span class="u-device--tablet-up">：</span><br class="u-device--tablet-down">160店舗 </p><!-- .p-section__body-text -->
+                  <p class="p-section__body-note">＊2019年3月末実績・導入準備店舗を含む</p><!-- .p-section__body-note -->
+                  <div class="p-performance-content">
+
+                    <div class="p-performance-article js-balloon-animate">
+                      <div class="p-performance-article__header">
+                        <h3 class="p-performance-article__header-text">横浜市・相鉄×高島屋<span class="u-device--tablet-up">・</span><br class="u-device--tablet-down">広島×SOGO<br>大手雑貨ストア<span class="u-device--tablet-up">・</span><br class="u-device--tablet-down">大手アパレルグループ内飲食店etc...</h3><!-- .p-performance-article__header-text -->
+                      </div><!-- .p-performance-article__header -->
+                      <div class="p-performance-article__body">
+                        <div class="p-performance-article__body-text p-performance-article__body-text--1">
+                          <p>外国人スタッフに<br class="u-device--tablet-up">頼りっきりだった状況を<br>変えられることができた</p>
+                          <span class="p-performance-article__body-balloon"><img src="img/bg_performance_balloon01.png" alt=""></span>
+                        </div>
+                        <div class="p-performance-article__body-text p-performance-article__body-text--2">
+                          <p>イヤイヤだった<br class="u-device--tablet-up">外国人への接客が<br>とっても楽になりました</p>
+                          <span class="p-performance-article__body-balloon"><img src="img/bg_performance_balloon02.png" alt=""></span>
+                        </div>
+                        <div class="p-performance-article__body-text p-performance-article__body-text--3">
+                          <p>日本語でも難しい<br class="u-device--tablet-up">料理や酒の説明を<br>スタッフに<br class="u-device--tablet-up">教えなくてもいい</p>
+                          <span class="p-performance-article__body-balloon"><img src="img/bg_performance_balloon03.png" alt=""></span>
+                        </div>
+                        <div class="p-performance-article__body-text p-performance-article__body-text--4">
+                          <p>スタッフ負担を<br class="u-device--tablet-up">減らすことで、<br>離職率が下がることに<br class="u-device--tablet-up">大きな期待</p>
+                          <span class="p-performance-article__body-balloon"><img src="img/bg_performance_balloon04.png" alt=""></span>
+                        </div>
+                        <div class="p-performance-article__body-text p-performance-article__body-text--5">
+                          <p>人間はやるべき仕事と<br class="u-device--tablet-up">そうでないことに<br>線引きができた</p>
+                          <span class="p-performance-article__body-balloon"><img src="img/bg_performance_balloon05.png" alt=""></span>
+                        </div>
+                        <div class="p-performance-article__body-text p-performance-article__body-text--6">
+                          <p>例えば、麺の硬さ、<br class="u-device--tablet-up">ご飯少なめなどの<br>細かい要望にも応える<br class="u-device--tablet-up">ことができて嬉しい</p>
+                          <span class="p-performance-article__body-balloon"><img src="img/bg_performance_balloon06.png" alt=""></span>
+                        </div>
+                        <div class="p-performance-article__body-text p-performance-article__body-text--7">
+                          <p>日本人のお客様と<br class="u-device--tablet-up">同じレベルの接客が<br>できるのが嬉しい</p>
+                          <span class="p-performance-article__body-balloon"><img src="img/bg_performance_balloon07.png" alt=""></span>
+                        </div>
+                        <div class="p-performance-article__image">
+                          <img src="img/img_performance_body.png" alt="">
+                        </div><!-- .p-performance-article__image -->
+                      </div><!-- .p-performance-article__body -->
+
+                    </div><!-- .p-potential-article -->
+
+                  </div><!-- .p-performance-content -->
+                </div><!-- .p-section__body -->
+              </div><!-- .p-section__container -->
+            </section><!-- .p-section -->
+
+            <section class="p-contact">
+              <div class="p-contact__container">
+                <div class="p-contact__body">
+                  <p>言葉の壁を越え、外国人旅行客の胃袋をつかむ<br>チャット型AIフードメニューをお役立てください</p>
+                </div><!-- .p-contact__body -->
+                <div class="p-contact__footer">
+                  <a href="#" target="_blank" class="c-btn c-btn--contact"><span>お申し込み・お問い合わせ</span></a>
+                </div><!-- .p-contact__footer -->
+              </div><!-- .p-contact__container -->
+            </section><!-- .p-contact -->
+
+            <section id="faq" class="p-section p-faq js-scroll-fade">
+              <div class="p-section__container">
+                <div class="p-section__header">
+                  <h2 class="p-section__header-text">よくあるご質問</h2><!-- .p-section__header-text -->
+                </div><!-- .p-section__header -->
+                <div class="p-section__body">
+                  <div class="p-faq-content">
+
+                    <div class="p-faq-article p-faq-article--1 js-acc">
+                      <div class="p-faq-article__header">
+                        <h3 class="p-faq-article__header-text"><a href="#" class="js-acc__trigger">多言語メニューが既にある、外国人スタッフがいる、<br class="u-device--tablet-up">翻訳機がある… そんな場合は<br class="u-device--tablet-down">Satisfoodは不要ですか？</a></h3><!-- .p-faq-article__header-text -->
+                      </div><!-- .p-faq-article__header -->
+                      <div class="p-faq-article__body js-acc__target">
+                        <p>Satisfoodは24時間365日休むことなく、何人でも同時に多言語で接客をします。人と違い、辞めてしまうこともありません。ベジタリアンやハラールの方への対応、お酒と料理のペアリングなど、旅行者の体験価値にフォーカスし、いずれのサービスとも異なった、１ランク上の体験が提供可能です。</p>
+                      </div><!-- .p-faq-article__body -->
+                    </div><!-- .p-potential-article -->
+
+                    <div class="p-faq-article p-faq-article--2 js-acc">
+                      <div class="p-faq-article__header">
+                        <h3 class="p-faq-article__header-text"><a href="#" class="js-acc__trigger">どんな部分にAIが活用されているのですか？</a></h3><!-- .p-faq-article__header-text -->
+                      </div><!-- .p-faq-article__header -->
+                      <div class="p-faq-article__body js-acc__target">
+                        <p>Satisfoodは、飲食店の店内で利用するレコメンデーション・エンジンです。国籍、好み、季節、土地などを考慮して、最適な提案をするためにAIを活用しています。例えば、好みのワインがあれば、そこから日本酒の提案をするなど、飲食に関する知識の壁を取り除き、ダイナミックな食体験を提供します。</p>
+                      </div><!-- .p-faq-article__body -->
+                    </div><!-- .p-potential-article -->
+
+                    <div class="p-faq-article p-faq-article--3 js-acc">
+                      <div class="p-faq-article__header">
+                        <h3 class="p-faq-article__header-text"><a href="#" class="js-acc__trigger">チャット型は使いやすくていいのですが、<br class="u-device--tablet-up">なぜリクエストの自由入力ができないのですか？</a></h3><!-- .p-faq-article__header-text -->
+                      </div><!-- .p-faq-article__header -->
+                      <div class="p-faq-article__body js-acc__target">
+                        <p>Satisfoodは不慣れな旅先で旅行者をサポートするレコメンデーション・エンジンです。旅行者は旅先の生活者からの提案を求めています。よほどの緊急時などを除くと、うまく要望を言語化できず、自由入力を可能にしても、会話が継続しないことが分ったため、現在のユーザー・インターフェイスにしました。</p>
+                      </div><!-- .p-faq-article__body -->
+                    </div><!-- .p-potential-article -->
+
+                    <div class="p-faq-article p-faq-article--4 js-acc">
+                      <div class="p-faq-article__header">
+                        <h3 class="p-faq-article__header-text"><a href="#" class="js-acc__trigger">Satisfoodを使うことによるメリットを教えてください。</a></h3><!-- .p-faq-article__header-text -->
+                      </div><!-- .p-faq-article__header -->
+                      <div class="p-faq-article__body js-acc__target">
+                        <p>お客様の満足度向上と従業員の満足度向上を同時に実現。前者により売上や口コミを増加し、後者により、接客コストを最適化し、従業員の稼働率を上げ、離職率を減少させます。ラグビーW杯やオリンピックなどにおける、外国人向けビジネスを加速させることができます。</p>
+                      </div><!-- .p-faq-article__body -->
+                    </div><!-- .p-potential-article -->
+
+                  </div><!-- .p-performance-content -->
+                </div><!-- .p-section__body -->
+              </div><!-- .p-section__container -->
+            </section><!-- .p-section -->
+
+            <section id="awards" class="p-awards js-scroll-fade">
+              <div class="p-awards__container">
+                <div class="p-awards__header">
+                  <h2 class="p-awards__header-text">Super Duperの主な受賞歴</h2>
+                </div><!-- .p-awards__header -->
+                <div class="p-awards__body">
+                  <div class="p-awards-grid">
+                    <div class="p-awards-grid__item">
+                      <p>BizLab 採択<small>（2018）</small></p>
+                      <span class="p-awards__bg"><img src="img/bg_awards_item.png" alt=""></span>
+                    </div><!-- .p-awards-grid__item -->
+                    <div class="p-awards-grid__item">
+                      <p>ＪＢグループ<br>アクセラレーター 採択<small>（2018）</small></p>
+                      <span class="p-awards__bg"><img src="img/bg_awards_item.png" alt=""></span>
+                    </div><!-- .p-awards-grid__item -->
+                    <div class="p-awards-grid__item">
+                      <p>相鉄×高島屋<br>アクセラレーション<br>プログラム 優勝<small>（2018）</small></p>
+                      <span class="p-awards__bg"><img src="img/bg_awards_item.png" alt=""></span>
+                    </div><!-- .p-awards-grid__item -->
+                    <div class="p-awards-grid__item">
+                      <p>スタートアップカタパルト<br>ファイナリスト<small>（2018）</small></p>
+                      <span class="p-awards__bg"><img src="img/bg_awards_item.png" alt=""></span>
+                    </div><!-- .p-awards-grid__item -->
+                    <div class="p-awards-grid__item">
+                      <p>ENTX<br>審査員特別賞<small>（2018）</small></p>
+                      <span class="p-awards__bg"><img src="img/bg_awards_item.png" alt=""></span>
+                    </div><!-- .p-awards-grid__item -->
+                    <div class="p-awards-grid__item">
+                      <p>ＪＢグループ<br>アクセラレーター 採択<small>（2018）</small></p>
+                      <span class="p-awards__bg"><img src="img/bg_awards_item.png" alt=""></span>
+                    </div><!-- .p-awards-grid__item -->
+                  </div><!-- .p-awards-grid -->
+                </div><!-- .p-awards__body -->
+              </div><!-- .p-awards__container -->
+            </section><!-- .p-section -->
+
+          </article>
+        </div><!-- .l-content -->
+
+      </div><!-- /l-layout__content -->
+    </div><!-- /l-layout__container -->
+  </div><!-- /l-layout -->
+
+  <div class="l-footer">
+    <footer class="l-footer__container">
+
+      <ul class="l-footer-navigation">
+        <li class="l-footer-navigation__item"><a href="/company/" class="l-footer-navigation__link">運営会社</a><span></span></li>
+        <li class="l-footer-navigation__item"><a href="/about/" class="l-footer-navigation__link">利用規約</a><span></span></li>
+        <li class="l-footer-navigation__item"><a href="/policy/" class="l-footer-navigation__link">プライバシーポリシー</a><span></span></li>
+      </ul><!-- .l-footer-navigation -->
+      <div class="copyright">&copy; 2019 Super Duper Co., Ltd.</div>
+    </footer>
+    <!-- <a href="#pagetop" class="to-pagetop">このページのトップへ</a> -->
+  </div><!-- /l-footer -->
+  <!-- //mainContents -->
+
+  <noscript>
+    <div style="display: inline;position: absolute;top: 0;left: 0;width: 100%;text-align:center;padding: 5px;border:1px solid #f00;color: #f00;background:#fff;">当サイトでは、JavaScriptを使用しております。ブラウザの設定状態によっては画面が正常に表示されない場合がございます。ご覧になる際にはブラウザ設定でJavaScriptを有効にしてください。</div>
+  </noscript>
+
+</body>
+</html>
